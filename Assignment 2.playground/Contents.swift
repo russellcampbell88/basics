@@ -123,9 +123,11 @@ print( pokemonName! )
 
 
 //** Problem 5. Classes, Inheritance, and Class Initialization
-//  Classes in Swift are objects with Attributes/Behaviors.
-//  The follow all Object-Oriented Programming principles (APIE).
-//  They need intializers, and are capitalized.
+/*    
+/     Classes in Swift are objects with Attributes/Behaviors.
+/     The follow all Object-Oriented Programming principles (APIE).
+/     They need intializers, and are capitalized.
+*/
 
 class Employee {
     
@@ -171,11 +173,14 @@ class Consultant: Employee {
     }
 }
 
-
 //** Problem 6. Structs and Struct Initializers
-//  Structs are data structures in Swift stored in stack memory.
-//  Structs don't need initializers, while Classes do.
-//  Structs do not support inheritance.
+/*  
+/  
+/  Structs are data structures in Swift stored in stack memory.
+/  Structs don't need initializers, while Classes do.
+/  Structs do not support inheritance.
+/
+*/
 struct Evangelion {
     
     var unit: String

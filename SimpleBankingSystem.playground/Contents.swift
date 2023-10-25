@@ -18,22 +18,22 @@ var greeting = "Hello, playground"
  
 *   Support Different Account Types: 
         Implement three types of accounts -
-            Savings
-            Checking
-            Business
+            (CHECK) Savings
+            (CHECK) Checking
+            (CHECK) Business
  
 *   Each account type may have specific features.
 *       
-        Deposit and Withdraw: Allow customers to deposit and withdraw money from their accounts.
+        (CHECK) Deposit and Withdraw: Allow customers to deposit and withdraw money from their accounts.
         Make sure to handle overdraft for checking accounts and minimum balance for savings accounts.
  
-*       Calculate Interest: For savings accounts, calculate and add monthly interest to the balance.
+*       (CHECK) Calculate Interest: For savings accounts, calculate and add monthly interest to the balance.
 *
 *       List All Accounts: Implement a function to list all customer accounts.
 *
 *       (CHECK) Transfer Funds: Implement a fund transfer feature to transfer money between two customer                accounts.
 *
-*       Calculate Total Bank Balance: Calculate the total balance of all accounts in the bank.
+*       (CHECK) Calculate Total Bank Balance: Calculate the total balance of all accounts in the bank.
             
             - (CHECK) NEED: Final Balance for ALL accounts
                 
@@ -43,7 +43,7 @@ var greeting = "Hello, playground"
 *   Your task is to:
         Design and implement the Swift code to achieve these functionalities. You should:
             (CHECK) use classes and
-            inheritance to model accounts
+            (CHECK) inheritance to model accounts
             use structs or enums for the account types
             (CHECK) apply generics for flexible account management
             and employ Swift collections to store and manage customer accounts
@@ -259,22 +259,26 @@ class CheckingAccount: BankAccount
 
 class SavingsAccount: BankAccount {
     
-    //
     let apy = 0.02
-    var monthsActive: Int?
+    var monthsActive: Double?
+    var initialSavings: Double
     
-    func calculateAccruedInterest( yearsActive: Int, apy: Double ) {
-        //  finalBalance =
+    init ( monthsActive: Double?, initialSavings: Double) {
+        self.monthsActive   = monthsActive
+        self.initialSavings = initialSavings
+        
+        super.init(initialBalance: <#T##Double#>, finalBalance: <#T##Double#>, finalBalanceChecking: <#T##Double#>, finalBalanceSavings: <#T##Double#>, finalBalanceBusiness: <#T##Double#>, transferAmount: <#T##Double#>, fromCheckingToSavings: <#T##Bool#>, fromCheckingToBusiness: <#T##Bool#>, fromSavingsToChecking: <#T##Bool#>, fromSavingsToBusiness: <#T##Bool#>, fromBusinessToChecking: <#T##Bool#>, fromBusinessToSavings: <#T##Bool#>)
+    }
+    
+    func calculateAccruedInterest( initialSavings: Double, monthsActive: Double, apy: Double ) {
+        let finalBalancePlusInterest = monthsActive * apy
+        print(finalBalancePlusInterest)
     }
 }
 
 class BusinessAccount: BankAccount
 {
     let monthlyServiceFee = 5.00
-    let minumumBalance = 25.00
+    let minumumBalance = 2500.00
 }
 
-
-
- 
- 

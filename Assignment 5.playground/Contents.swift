@@ -1,6 +1,6 @@
 import UIKit
 
-var greeting = "Hello, playground"
+var greeting = "Hello, playground" 
 
 //  Generics for Classes
 //  by adding T, we make the class work with any datatpe

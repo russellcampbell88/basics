@@ -2,9 +2,20 @@ import UIKit
 
 var greeting = "Hello, playground"
 
+//  Assignment-5
+/* Create new playground taking any Example of your choice, so as to display the use of
+Below in Swift
+1..Generics for classes, enum, struct
+2.Higher order functions
+3.Closures AND its types
+Prepare Theoretical part for above topics as well, We will have question answer session for it.
+*/
+                    
+//**Problem 1. - Generics for Classes and Structs
+
 //  Generics for Classes
 //  by adding T, we make the class work with any datatpe
-class Information<T> {
+class Information< T > {
     
     var data: T
     
@@ -23,7 +34,7 @@ class Information<T> {
 //  Generic form.
 
 //  Remember, Queue is FIFO
-struct MyQueue<T> {
+struct MyQueue< T > {
     
     var myqueue: [T]
     
@@ -36,7 +47,45 @@ struct MyQueue<T> {
     }
 }
 
-//  Closures --
+
+//** Problem 2. Higher Order functions
+
+let numbers = [ 1, 2, 3, 4, 5, 6, 7 ]
+
+var result0 = [Int] ()
+for num in numbers {
+    result0.append( num * num )
+}
+print( result0 )
+
+// We use a map here
+let squares = numbers.map{ $0 * $0 }
+print( result )
+
+
+//  MARK: FILTER
+let evenNumber = numbers.filter{ $0 % 2 != 0 }
+print("evenNumber- \(evenNumber)")
+
+//  MARK: Reduce
+let totalOfAllNumbers = numbers.reduce(0, +)
+print("totalOfAllNumbers is- \(totalOfAllNumbers)")
+
+//  MARK: Sort
+let unsortedNumbers = [234, 44, 11, 76, 97, 3, 1, 123553, 45]
+let sortedValues = unsortedNumbers.sorted()
+print( sortedValues )
+
+//  MARK: FlatMap
+let someWords = [ "Hello", "World","Swift" ]
+let resul = someWords.flatMap{$0}
+
+let duplicateNilArray = [ [123, 555], nil, [0, 0, 1, 4], [6, 555 ] ]
+print( duplicateNilArray )
+
+
+
+//**Problem 3. Closures --
 /*
  *
  * A closure is an unnamed block of code that we can pass around and use in code and can assign to a var or can return from a function size
@@ -46,7 +95,7 @@ struct MyQueue<T> {
 //  Closures are reference types.
 //  They capture and store the reference to any constants in the surrounding context.
 
-
+// i. Non-Escaping closures
 func squareThisNumber( number1: Int ) -> Int {
     return number1 * number1
 }
@@ -67,10 +116,8 @@ doSquare( number1: 5, completion: { output in
     print("doSquare- \(output)")
 }
 
-// i. Non-Escaping closures
-//
-         
-///
+
+        
 // ii. Escaping Closures
 func performAPICall( completion: () -> () ) {
     print( "flag that we're in performAPICall")
@@ -106,50 +153,14 @@ func performAPICall( completion: () -> () ) {
         print( result )
     }
     
-    //** Problem 4. Auto Closures
+    // iv. Auto Closures
     /* When a closure doesn't take any parameter;
-     *
-     *
-     *
-     */
+     * it enables you to define an argument that
+     * automatically gets wrapped in a closure.
+     * It'ss used inside Swift wherever code needs to be passed in
+     * and executed only if conditions are right     */
     
     //  It returns anything from a closure, then it gets self-wrapped when when called, this ins known as an Auto Closure. It doesn't accept, doesn't return
     func travelToDestination( action:()->() ) {
         action()
     }
-    
-    //** Problem 5. Higher Order functions
-    
-    let numbers = [ 1, 2, 3, 4, 5, 6, 7 ]
-    
-    var result0 = [Int] ()
-    for num in numbers {
-        result0.append( num * num )
-    }
-    print( result0 )
-    
-    
-    let squares = numbers.map{ $0 * $0 }
-    print( result )
-    
-    
-    //  MARK: FILTER
-    let evenNumber = numbers.filter{ $0 % 2 != 0 }
-    print("evenNumber- \(evenNumber)")
-    
-    //  MARK: Reduce
-    let totalOfAllNumbers = numbers.reduce(0, +)
-    print("totalOfAllNumbers is- \(totalOfAllNumbers)")
-    
-    //  MARK: Sort
-    let unsortedNumbers = [234, 44, 11, 76, 97, 3, 1, 123553, 45]
-    let sortedValues = unsortedNumbers.sorted()
-    print( sortedValues )
-    
-    //  MARK: FlatMap
-    let someWords = [ "Hello", "Swift", "World"]
-    let resul = someWords.flatMap{$0}
-    
-    let duplicateNilArray = [ [123, 555], nil, [0, 0, 1, 4], [6, 555 ] ]
-    print( duplicateNilArray )
-

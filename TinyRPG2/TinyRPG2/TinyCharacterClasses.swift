@@ -7,6 +7,16 @@
 
 import Foundation
 
+/* Access Modification
+ * 1. Internal     - (Default) Anything which is defined in the same                             modaccessible. Only within the scope. It's secure.
+ * 2. Private      - the most restrictive access modifier.
+ * 3. FilePrivate  -
+ * 4. Public       - most permissive access modifier. There are no restrictions,
+                     therefore you can access the file from a different class.
+                     Used to give you access in another frame. Disallows subclassing
+ * 5. Open         - Allows subclassing.
+ */
+
 class CharacterClass {
     //  Use access modifiers to keep the attributes secure
     private let className: String
@@ -29,5 +39,9 @@ class CharacterClass {
     }
 }
 
-let characters = [CharacterClass(className: "Mage", classSpecialty: "Magic"),
+let characters = [CharacterClass(className: "Black Mage", classSpecialty: "Black Magic"),
+                  CharacterClass(className: "White Mage", classSpecialty: "White Magic"),
+                  CharacterClass(className: "Blue Mage", classSpecialty: "Blue Magic"),
+                  CharacterClass(className: "Summoner", classSpecialty: "Summons"),
+                  CharacterClass(className: "Tank", classSpecialty: "Self-Taunt"),
                   CharacterClass(className: "Berserker", classSpecialty: "DPS")]

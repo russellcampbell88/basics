@@ -10,12 +10,15 @@ import Foundation
 
 //  Here we tackle error handling.
 
+//  The enum storing all our possible savefile errors
 enum TinyRPGErrors: Error {
     case failedToSaveFile
     case fileDidNotLoad
+    case corruptSaveFile
     case unknown
 }
 
+// Dispplay our errors to console
 extension TinyRPGErrors: LocalizedError {
     var errorDescription: String?
     {
@@ -27,6 +30,8 @@ extension TinyRPGErrors: LocalizedError {
             return NSLocalizedString("Failed to load the game", comment: "failedToLoadFile")
         case .unknown:
             return NSLocalizedString("Could not pinpoint error", comment: "unknown")
+        default:
+            return NSLocalizedString("Save file corrupted.", comment: "corruptSaveFile")
         }
     }
 }

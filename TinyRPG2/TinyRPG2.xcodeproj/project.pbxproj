@@ -18,6 +18,7 @@
 		FF5367262AEBC40F003BBA04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5367252AEBC40E003BBA04 /* Info.plist */; };
 		FF53672C2AEBC5AD003BBA04 /* TinyCharacterClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53672B2AEBC5AD003BBA04 /* TinyCharacterClasses.swift */; };
 		FF53672E2AEBC7C5003BBA04 /* TinyRPGEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53672D2AEBC7C5003BBA04 /* TinyRPGEngine.swift */; };
+		FF5367302AEBD9FA003BBA04 /* TinySaveFileValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53672F2AEBD9FA003BBA04 /* TinySaveFileValidation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FF5367252AEBC40E003BBA04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF53672B2AEBC5AD003BBA04 /* TinyCharacterClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyCharacterClasses.swift; sourceTree = "<group>"; };
 		FF53672D2AEBC7C5003BBA04 /* TinyRPGEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyRPGEngine.swift; sourceTree = "<group>"; };
+		FF53672F2AEBD9FA003BBA04 /* TinySaveFileValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySaveFileValidation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FF53671E2AEBBEE5003BBA04 /* TinyErrors.swift */,
 				FF53672B2AEBC5AD003BBA04 /* TinyCharacterClasses.swift */,
 				FF53672D2AEBC7C5003BBA04 /* TinyRPGEngine.swift */,
+				FF53672F2AEBD9FA003BBA04 /* TinySaveFileValidation.swift */,
 				FF5367252AEBC40E003BBA04 /* Info.plist */,
 			);
 			path = TinyRPG2;
@@ -273,6 +276,7 @@
 				FF53672C2AEBC5AD003BBA04 /* TinyCharacterClasses.swift in Sources */,
 				FF5366F72AEBBE2E003BBA04 /* ContentView.swift in Sources */,
 				FF5366F52AEBBE2E003BBA04 /* TinyRPG2App.swift in Sources */,
+				FF5367302AEBD9FA003BBA04 /* TinySaveFileValidation.swift in Sources */,
 				FF53671F2AEBBEE5003BBA04 /* TinyErrors.swift in Sources */,
 				FF53672E2AEBC7C5003BBA04 /* TinyRPGEngine.swift in Sources */,
 			);

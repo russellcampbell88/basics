@@ -2,7 +2,7 @@
 //  TinyRPGEngine.swift
 //  TinyRPG2
 //
-//  Created by Russell Campbell on 10/27/23.
+//  Created by Russell Campbell on 10/26/23.
 //
 
 import Foundation
@@ -16,22 +16,39 @@ import Foundation
 
 //  Make a protocol for the Character Classes
 protocol Saveable {
-    var className: String {get set}
-    var classSpecialty: String {get set}
+    var saveFileName: String {get set}
+    var loadFileName: String {get set}
     
-    func saveFile(  )throws -> String
+    func saveFile( authManager: TinySaveFileValidation? )throws -> String
 }
 
 class SaveFile: Saveable {
-    var className: String
-    var classSpecialty: String
+    var saveFileName: String
+    var loadFileName: String
     
     init(className: String, classSpecialty: String) {
-        self.className = className
-        self.classSpecialty = classSpecialty
+        self.saveFileName = saveFileName
+        self.loadFileName = loadFileName
     }
     
-    func saveFile(authManager: <<error type>>) throws -> String {
-        <#code#>
+    func saveFile(authManager: TinySaveFileValidation?) throws -> String {
+        guard let authManager = authManager else
+        {
+            //  Throw the error
+            throw TinyRPGErrors.unknown
+        }
+        
+        if authManager.loadFile()
+        {
+            if saveFileName == "" {
+                throw TinyRPGErrors.failedToSaveFile
+            } else if loadFileName == "" {
+                throw TinyRPGErrors.fileDidNotLoad
+            }
+            
+            return self.loadFileName
+        } else {
+            throw TinyRPGErrors.corruptSaveFile
+        }
     }
 }

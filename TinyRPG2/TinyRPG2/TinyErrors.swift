@@ -12,7 +12,7 @@ import Foundation
 
 enum TinyRPGErrors: Error {
     case failedToSaveFile
-    case fileDidNotLoad
+    case fileDidNotLoad 
     case unknown
 }
 

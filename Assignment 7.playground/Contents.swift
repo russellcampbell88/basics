@@ -57,23 +57,7 @@ person = nil
 var person2 = person
 person2 = nil
 
-//  Whenever you creat ean object from any variable,
-//  There is a _ for any variable
 
-//  This frees the memory, and is equivalent to
-    // a free statement in another programming language.
-
-//  Reference count = 0 before initialization
-//  Reference count = 1 after initialization
-//  Reference count = 0 after making it nil
-
-//  Optionals have NO BEARING on the Reference Count!
-
-//  Person = nil // This decrements the reference count by 1
-
-//  setting to nil prevents an unnecessary memory leak
-//  Tells compiler to clear the memory.
-//  The ARC then comes along and clears the reference
 
 //**Problem 2. MARK: STONG, WEAK, AND UNOWNED REFERENCES
 
@@ -108,7 +92,21 @@ class Car
     }
 }
 
-var car1: Car? = Car( type: "Electric", owner: <#Person#> )
+
+//  Additionally, weak variables  help us understands 
+//  which classes will live longer than pther classes.
+
+
+//  MARK: RETAIN CYCLE
+/*
+ * 1. Retain Cycle Issue - when 2 strong Objs retain each other
+ *    strongly, then it creates a cyclic loop of dependency, which
+      gets called as a Retain Cycle Issue
+ */
+
+
+//  Also, 'weak' tells variables \, 'don't do reference counting.'
+var car1: Car? = Car( type: "Electric"  )
 var person1: Person? = Person( name: "Russell", age: 30 )
 person?.car = car1
 
@@ -123,15 +121,23 @@ person1 = nil
 car1 = nil
 
 
+//  Whenever you creat ean object from any variable,
+//  There is a _ for any variable
 
-//  MARK: RETAIN CYCLE
-/*
- * 1. Retain Cycle Issue - when 2 strong Objs retain each other
- *    strongly, then it creates a cyclic loop of dependency, which
-      gets called as a Retain Cycle Issue
- */
+//  This frees the memory, and is equivalent to
+    // a free statement in another programming language.
 
+//  Reference count = 0 before initialization
+//  Reference count = 1 after initialization
+//  Reference count = 0 after making it nil
 
+//  Optionals have NO BEARING on the Reference Count!
+
+//  Person = nil // This decrements the reference count by 1
+
+//  setting to nil prevents an unnecessary memory leak
+//  Tells compiler to clear the memory.
+//  The ARC then comes along and clears the reference
 
 //  MARK: CONCURRENCY/MULTITHREADING
 /*
@@ -157,22 +163,56 @@ car1 = nil
  */
 
 
- /*
- *
- *  // MARK: Serial Queue
- *
- */
-
 //  Main Queue - Main Thread
-print( isMainThread )
-
 DispatchQueue.main.async {
+    
+    print("Main Thread A Started")
+    var a = 1
+    for i in 0...10000{
+        a += 1
+    }
+    print("Main Thread A Ended")
+}
 
-        print("Main Thread")
-        //print(isMainThread)
+DispatchQueue.main.async{
+    print("Main Thread B Started")
+    var a = 1
+    for i in 0...1000{
+        a += 1
+    }
+    print("Main Thread B Ended")
+}
+
+/*
+*
+*  // MARK: Serial Queue
+*
+*/
+let serialQueue1 = DispatchQueue(label: "Q1")
+let serialQueue2 = DispatchQueue(label: "Q2")
+
+serialQueue1.async {
+    print("Serial queue 1") //runs first
+}
+
+serialQueue1.async {
+    print("Serial que 2") //runs second
 }
 
 
-//  QUESTION: If the main thread runs [ ], then [ ]?
 
-//  Concurrent Queue
+/*
+ *
+ * Concurrent Queue
+ *
+ */
+
+let concurrentQuenue = DispatchQueue(label: "concurrentQuenue", attributes: .concurrent)
+concurrentQuenue.async {
+    for _ in 1...10000{//to delay the concurrent Quenue
+    }
+    print("Ca task")
+}
+concurrentQuenue.async {
+    print("Cb task")
+}

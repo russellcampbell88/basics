@@ -199,8 +199,6 @@ serialQueue1.async {
     print("Serial que 2") //runs second
 }
 
-
-
 /*
  *
  * Concurrent Queue
@@ -216,3 +214,5 @@ concurrentQuenue.async {
 concurrentQuenue.async {
     print("Cb task")
 }
+
+// "Awaiting Code Review"

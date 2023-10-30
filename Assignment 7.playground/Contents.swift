@@ -188,15 +188,17 @@ DispatchQueue.main.async{
 *  // MARK: Serial Queue
 *
 */
-let serialQueue1 = DispatchQueue(label: "Q1")
-let serialQueue2 = DispatchQueue(label: "Q2")
+let serialQueue1 = DispatchQueue(label: "Queue 1")
+let serialQueue2 = DispatchQueue(label: "Queue 2")
 
+//  Serial queue 1 runs first,
+//  and serial queue 2 runs second.
 serialQueue1.async {
-    print("Serial queue 1") //runs first
+    print("Serial queue 1")
 }
 
 serialQueue1.async {
-    print("Serial que 2") //runs second
+    print("Serial queue 2")
 }
 
 
@@ -209,10 +211,10 @@ serialQueue1.async {
 
 let concurrentQuenue = DispatchQueue(label: "concurrentQuenue", attributes: .concurrent)
 concurrentQuenue.async {
-    for _ in 1...10000{//to delay the concurrent Quenue
+    for _ in 1...10000 {
     }
-    print("Ca task")
+    print("Concurrent task A")
 }
 concurrentQuenue.async {
-    print("Cb task")
+    print("Concurrent task B")
 }

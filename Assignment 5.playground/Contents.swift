@@ -1,6 +1,6 @@
 import UIKit
 
-var greeting = "Hello, playground"
+var greeting = "Hello, playground" 
 
 //  Assignment-5
 /* Create new playground taking any Example of your choice, so as to display the use of

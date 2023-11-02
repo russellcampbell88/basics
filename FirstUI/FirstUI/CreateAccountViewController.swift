@@ -1,19 +1,19 @@
 //
-//  AccountListViewController.swift
+//  CreateAccountViewController.swift
 //  FirstUI
 //
-//  Created by Russell Campbell on 10/31/23.
+//  Created by Russell Campbell on 11/2/23.
 //
 
 import UIKit
 
-class AccountListViewController: UIViewController {
+class CreateAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Accounts List"
+        self.title = "Sign Up"
     }
     
 

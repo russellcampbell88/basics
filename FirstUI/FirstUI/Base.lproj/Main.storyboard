@@ -76,6 +76,7 @@
                                 <state key="normal" title="Button" backgroundImage="chat-118"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SIGN IN"/>
                                 <connections>
+                                    <action selector="loginButtonTapped:" destination="N2R-Oj-509" eventType="touchUpInside" id="ndx-XI-zlu"/>
                                     <segue destination="rey-JO-jac" kind="show" id="xKj-Oc-sdD"/>
                                 </connections>
                             </button>
@@ -101,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-oB-kxG">
-                                <rect key="frame" x="23" y="89" width="178" height="32"/>
+                                <rect key="frame" x="23" y="89" width="354" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -132,6 +133,13 @@
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="qCZ-ib-wL1"/>
+                    <connections>
+                        <outlet property="emailIDTextField" destination="tBe-ko-4Sw" id="8Qs-WL-k3Z"/>
+                        <outlet property="loginButton" destination="RZx-1B-jg7" id="Q0T-f9-7Xy"/>
+                        <outlet property="passwordTextField" destination="ir5-y7-jHC" id="ClU-bf-raE"/>
+                        <outlet property="screenLogoImageView" destination="VXC-a5-M0A" id="og9-gU-7Y8"/>
+                        <outlet property="welcomeLabel" destination="hpd-oB-kxG" id="42j-jc-NnK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg8-LK-afg" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="Ua5-0u-dbo" userLabel="Reset Password Page">
@@ -404,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJh-86-cLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="682"/>
+            <point key="canvasLocation" x="147" y="731"/>
         </scene>
         <!--Reset Password-->
         <scene sceneID="mIF-gT-aHR">

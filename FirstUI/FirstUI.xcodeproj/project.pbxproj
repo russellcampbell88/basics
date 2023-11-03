@@ -111,18 +111,12 @@
 		FF5367B22AF00F65003BBA04 /* FirstUI */ = {
 			isa = PBXGroup;
 			children = (
-				FF5367FA2AF3E421003BBA04 /* Networking */,
-				FF5367F92AF3E417003BBA04 /* Controller */,
-				FF5367F82AF3E409003BBA04 /* View */,
 				FF5367F72AF3E3FE003BBA04 /* Model */,
+				FF5367F82AF3E409003BBA04 /* View */,
+				FF5367F92AF3E417003BBA04 /* Controller */,
+				FF5367FA2AF3E421003BBA04 /* Networking */,
 				FF5367B32AF00F65003BBA04 /* AppDelegate.swift */,
 				FF5367B52AF00F65003BBA04 /* SceneDelegate.swift */,
-				FF5367B72AF00F65003BBA04 /* ViewController.swift */,
-				FF5367FD2AF40A2E003BBA04 /* CreateAccountViewController.swift */,
-				FF5367F12AF3DBC2003BBA04 /* SignUpViewController.swift */,
-				FF5367F52AF3DDBD003BBA04 /* ResetPasswordViewController.swift */,
-				FF5367E32AF25309003BBA04 /* AccountListViewController.swift */,
-				FF5367FB2AF3EBCE003BBA04 /* GridViewController.swift */,
 				FF5367B92AF00F65003BBA04 /* Main.storyboard */,
 				FF5367BC2AF00F67003BBA04 /* Assets.xcassets */,
 				FF5367BE2AF00F67003BBA04 /* LaunchScreen.storyboard */,
@@ -158,6 +152,7 @@
 		FF5367F82AF3E409003BBA04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF5367B72AF00F65003BBA04 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +160,11 @@
 		FF5367F92AF3E417003BBA04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FF5367FD2AF40A2E003BBA04 /* CreateAccountViewController.swift */,
+				FF5367F12AF3DBC2003BBA04 /* SignUpViewController.swift */,
+				FF5367F52AF3DDBD003BBA04 /* ResetPasswordViewController.swift */,
+				FF5367E32AF25309003BBA04 /* AccountListViewController.swift */,
+				FF5367FB2AF3EBCE003BBA04 /* GridViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

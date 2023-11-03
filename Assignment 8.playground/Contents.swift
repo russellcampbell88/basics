@@ -10,7 +10,8 @@ var greeting = "Hello, playground"
 
 //  Tasks will always start in the order they’re added but they can finish in a different order as they can be executed in parallel. 
 
-//  Tasks will run on distinct threads that are managed by the dispatch queue. The number of tasks running at the same time is variable and depends on system conditions.
+//  Tasks will run on distinct threads that are managed by the dispatch queue. The number of tasks running at the same time is variable 
+//  and depends on system conditions.
 
 //  Concurrent Queues are the only ones where you can mix sync/async
 let concurrentQueue = DispatchQueue( label:"ConcurrentQueue")
@@ -139,7 +140,8 @@ func task2() async {
     }
 }
 
-//  Await gives us Structured Concurrency; with async-await method calls makes it easier to reason the order of execution. Methods are linearly executed without going back and forth, like with closures.
+//  Await gives us Structured Concurrency; with async-await method calls makes it easier to reason the order of execution.
+//Methods are linearly executed without going back and forth, like with closures.
 Task {
     await task1( )
     await task2( )
@@ -156,7 +158,8 @@ Task {
  *  Actors do not support iheritance.
  *  Actors guarantee properties will be modified one at a time.
  
- *   One of the core advantages of Swift’s actor types is that they can help prevent “data races” — that is, memory corruption issues that can occur when two separate threads attempt to access or mutate the same data at the same time.
+ *   One of the core advantages of Swift’s actor types is that they can help prevent “data races” — that is, 
+     memory corruption issues that can occur when two separate threads attempt to access or mutate the same data at the same time.
  *
  */
 actor BankDetails {
@@ -194,11 +197,14 @@ Task {
 }
 
 /*Actors work much like classes (that is, they are passed by reference), with two key exceptions:
-* An actor automatically serializes all access to its properties and methods, which ensures that only one caller can directly interact with the actor at any given time. That in turn gives us complete protection against data races, since all mutations will be performed serially, one after the other.
+* An actor automatically serializes all access to its properties and methods, which ensures that only one 
+  caller can directly interact with the actor at any given time. That in turn gives us complete protection against data races, 
+  since all mutations will be performed serially, one after the other.
 
 * Actors don’t support subclassing since, well, they’re not actually classes.
 *
-* So, practically, all that we have to do to convert our UserStorage class into an actor is to go back to its original implementation, and simply replace its use of the class keyword with the new actor keyword:
+* So, practically, all that we have to do to convert our UserStorage class into an actor is to go back to its original implementation,
+  and simply replace its use of the class keyword with the new actor keyword:
  */
 actor UserStorage {
     private var users: [String] = []

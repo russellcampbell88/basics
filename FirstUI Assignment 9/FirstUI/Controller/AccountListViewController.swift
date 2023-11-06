@@ -47,14 +47,13 @@ class AccountListViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let accountsListVC = storyboard.instantiateViewController(withIdentifier: "AccountsListViewControllerID" ) as! AccountListViewController
-        
-        
+
+        //  accountsListVC?.emailData = emailIDTextField.text ?? ""
         // --
-        
-        //accountsListVC?.emailData = emailIDTextField.text ?? ""
+        // --
         //  Push the new view onto the stack
         //  This is the actual line that takes us to the next screen.
-        self.navigationController?.pushViewController(accountsListVC, animated: true)
+        self.navigationController?.pushViewController( accountsListVC, animated: true )
         
         // another way to do it
     }

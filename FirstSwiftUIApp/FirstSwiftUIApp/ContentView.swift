@@ -10,8 +10,7 @@ import SwiftUI
 
 // This is our main struct for the Content View
 struct ContentView: View 
-{
-    
+{   
     // Structs are immutable by default
 
     @State var emailID: String = ""
@@ -75,7 +74,9 @@ struct ContentView: View
                 Button("Tap Me") {
             
                 }
-                //Text("LearnING") //UILabel
+                
+                //UILabel
+                //Text("LearnING") 
             }
             
             .padding()

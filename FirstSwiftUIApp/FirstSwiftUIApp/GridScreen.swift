@@ -23,8 +23,13 @@ struct GridScreen: View
         VStack {
             //  Make it scrollable
             ScrollView {
+                //  We're guaranteed that OS will only make memory for the
+                //  Visible parts.
                 LazyVGrid( columns: gridColumns ) {
                     Section( "1st Section" ) {
+                        
+                        //  We don't need a reusable identifier.
+                        //  SwiftUI handles this fir us.
                         ForEach( monthsArray, id: \.self )
                         {
                             day in NavigationLink {
@@ -48,6 +53,7 @@ struct GridScreen: View
                 }
                 ScrollView ( .horizontal )
                 {
+                    //  Align cells horizontally
                     LazyHGrid( rows: gridColumns )
                     {
                         

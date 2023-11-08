@@ -19,12 +19,10 @@
 		FF56ED482AF93E8D0039666F /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED472AF93E8D0039666F /* DetailsScreen.swift */; };
 		FF56ED4A2AF9477A0039666F /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED492AF9477A0039666F /* GridScreen.swift */; };
 		FF56ED4C2AF948850039666F /* GridScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED4B2AF948850039666F /* GridScreenCell.swift */; };
-		FF56ED4E2AF94CB90039666F /* FeraligatrImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED4D2AF94CB90039666F /* FeraligatrImageDisplayView.swift */; };
-		FF56ED512AFA36EB0039666F /* AmpharosImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED502AFA36EB0039666F /* AmpharosImageDisplayView.swift */; };
-		FF56ED532AFA37770039666F /* MamoswineImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED522AFA37770039666F /* MamoswineImageDisplayView.swift */; };
-		FF56ED552AFA382F0039666F /* TogekissImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED542AFA382F0039666F /* TogekissImageDisplayView.swift */; };
-		FF56ED572AFA39460039666F /* TyranitarImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED562AFA39460039666F /* TyranitarImageDisplayView.swift */; };
-		FF56ED592AFA39C10039666F /* DragoniteImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED582AFA39C10039666F /* DragoniteImageDisplayView.swift */; };
+		FF56ED4E2AF94CB90039666F /* CommonImageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED4D2AF94CB90039666F /* CommonImageDisplay.swift */; };
+		FF56ED5B2AFA7DD30039666F /* SwiftUIZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */; };
+		FF56ED5D2AFA7FE90039666F /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */; };
+		FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +58,10 @@
 		FF56ED472AF93E8D0039666F /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
 		FF56ED492AF9477A0039666F /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
 		FF56ED4B2AF948850039666F /* GridScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreenCell.swift; sourceTree = "<group>"; };
-		FF56ED4D2AF94CB90039666F /* FeraligatrImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeraligatrImageDisplayView.swift; sourceTree = "<group>"; };
-		FF56ED502AFA36EB0039666F /* AmpharosImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpharosImageDisplayView.swift; sourceTree = "<group>"; };
-		FF56ED522AFA37770039666F /* MamoswineImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MamoswineImageDisplayView.swift; sourceTree = "<group>"; };
-		FF56ED542AFA382F0039666F /* TogekissImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogekissImageDisplayView.swift; sourceTree = "<group>"; };
-		FF56ED562AFA39460039666F /* TyranitarImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyranitarImageDisplayView.swift; sourceTree = "<group>"; };
-		FF56ED582AFA39C10039666F /* DragoniteImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragoniteImageDisplayView.swift; sourceTree = "<group>"; };
+		FF56ED4D2AF94CB90039666F /* CommonImageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonImageDisplay.swift; sourceTree = "<group>"; };
+		FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIZStack.swift; sourceTree = "<group>"; };
+		FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
+		FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricReaderExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +112,9 @@
 		FF53682C2AF92B3E003BBA04 /* FirstSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF53682D2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift */,
 				FF53682F2AF92B3E003BBA04 /* ContentView.swift */,
+				FF53682D2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift */,
+				FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */,
 				FF5368312AF92B41003BBA04 /* Assets.xcassets */,
 				FF5368332AF92B41003BBA04 /* Preview Content */,
 				FF56ED432AF938590039666F /* ListScreen.swift */,
@@ -126,6 +123,8 @@
 				FF56ED492AF9477A0039666F /* GridScreen.swift */,
 				FF56ED4B2AF948850039666F /* GridScreenCell.swift */,
 				FF56ED4F2AFA35530039666F /* Images */,
+				FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */,
+				FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */,
 			);
 			path = FirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -158,12 +157,7 @@
 		FF56ED4F2AFA35530039666F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FF56ED4D2AF94CB90039666F /* FeraligatrImageDisplayView.swift */,
-				FF56ED502AFA36EB0039666F /* AmpharosImageDisplayView.swift */,
-				FF56ED522AFA37770039666F /* MamoswineImageDisplayView.swift */,
-				FF56ED542AFA382F0039666F /* TogekissImageDisplayView.swift */,
-				FF56ED562AFA39460039666F /* TyranitarImageDisplayView.swift */,
-				FF56ED582AFA39C10039666F /* DragoniteImageDisplayView.swift */,
+				FF56ED4D2AF94CB90039666F /* CommonImageDisplay.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -299,17 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5368302AF92B3E003BBA04 /* ContentView.swift in Sources */,
-				FF56ED4E2AF94CB90039666F /* FeraligatrImageDisplayView.swift in Sources */,
+				FF56ED4E2AF94CB90039666F /* CommonImageDisplay.swift in Sources */,
 				FF56ED4A2AF9477A0039666F /* GridScreen.swift in Sources */,
-				FF56ED552AFA382F0039666F /* TogekissImageDisplayView.swift in Sources */,
+				FF56ED5D2AFA7FE90039666F /* SwiftUIWebView.swift in Sources */,
 				FF56ED462AF93DDC0039666F /* ListCell.swift in Sources */,
-				FF56ED592AFA39C10039666F /* DragoniteImageDisplayView.swift in Sources */,
-				FF56ED532AFA37770039666F /* MamoswineImageDisplayView.swift in Sources */,
+				FF56ED5B2AFA7DD30039666F /* SwiftUIZStack.swift in Sources */,
 				FF56ED4C2AF948850039666F /* GridScreenCell.swift in Sources */,
+				FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */,
 				FF56ED482AF93E8D0039666F /* DetailsScreen.swift in Sources */,
-				FF56ED572AFA39460039666F /* TyranitarImageDisplayView.swift in Sources */,
 				FF56ED442AF938590039666F /* ListScreen.swift in Sources */,
-				FF56ED512AFA36EB0039666F /* AmpharosImageDisplayView.swift in Sources */,
 				FF53682E2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

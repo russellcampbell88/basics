@@ -15,13 +15,28 @@ struct ListScreen: View {
     let pokemonStorageArray =
     ["Box 1","Box 2","Box 3","Box 4","Box 5","Box 6","Box 7","Box 8"]
     
+    //  We need this to avoid redundant views
+    let pokemonImagesArray = [ "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/e/e1/160-Feraligatr.png/revision/latest?cb=20190315145749", "https://archives.bulbagarden.net/media/upload/c/c2/0181Ampharos.png",
+        "https://archives.bulbagarden.net/media/upload/4/4c/0473Mamoswine.png",
+        "https://archives.bulbagarden.net/media/upload/8/8f/0468Togekiss.png",
+        "https://archives.bulbagarden.net/media/upload/0/09/0248Tyranitar.png",
+        "https://pm1.aminoapps.com/6562/c327fb4bf4b8fcfa5dc2c0f1d3c8f15984f6e410_hq.jpg"
+        ]
+    //zip operator
+    var combinedArray: [(String, String)] {
+        return Array(zip(pokemonInPartyArray, pokemonImagesArray))
+    }
+    
     var body: some View
     {
         //Text( /*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/ )
       
         VStack
         {
-            //  List - show data in array
+            //  List - show data in array.
+            //  i.e. you have an array. Show its data in a
+            //  list.
+            
             //  id.\.self is kinda like a
             //  for loop
             
@@ -33,34 +48,19 @@ struct ListScreen: View {
                 //  MARK: Navigation to Images Display Views
                 //  Here we navigate to views displaying images.
                 Section( "Party Pokemon" ) {
-                    ForEach( pokemonInPartyArray, id: \.self )
+                    ForEach( combinedArray, id: \.0 ) //zip array syntax
                     {
-                        pokemon in NavigationLink {
+                        name, image in NavigationLink {
                             
-                            // Switch statement for all the
-                            // navigations to the Pokemon images
-                            switch pokemon {
-                                case "Feraligatr":
-                                    FeraligatrImageDisplayView()
-                                case "Ampharos":
-                                    AmpharosImageDisplayView()
-                                case "Mamoswine":
-                                    MamoswineImageDisplayView()
-                                case "Togekiss":
-                                    TogekissImageDisplayView()
-                                case "Tyranitar":
-                                    TyranitarImageDisplayView()
-                                case "Dragonite":
-                                    DragoniteImageDisplayView()
-                                default:                             DetailsScreen( data: pokemon )
-                            }
-
+                            CommonImageDisplay(imageURL: image)
                             
 
+                            
+                        //  Display to the user
                         } label: {
-                            ListCell( month: pokemon )
+                            ListCell( month: name )
                             HStack{
-                                Text(pokemon)
+                                Text(name)
                             }
                         }
                         /*

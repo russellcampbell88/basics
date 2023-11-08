@@ -24,16 +24,9 @@ struct SwiftUIWebView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> WKWebView {
             return WKWebView()
-        }
     }
-    
+}
 
-
-
-
-    /*var body: some View {
-        Text()
-    }*/
 
 
 #Preview {

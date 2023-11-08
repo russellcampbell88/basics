@@ -23,6 +23,8 @@
 		FF56ED5B2AFA7DD30039666F /* SwiftUIZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */; };
 		FF56ED5D2AFA7FE90039666F /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */; };
 		FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */; };
+		FF56ED632AFB9CF40039666F /* TabBarUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */; };
+		FF56ED652AFBA6EE0039666F /* GeometricReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIZStack.swift; sourceTree = "<group>"; };
 		FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricReaderExampleView.swift; sourceTree = "<group>"; };
+		FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUIViews.swift; sourceTree = "<group>"; };
+		FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,19 +116,21 @@
 		FF53682C2AF92B3E003BBA04 /* FirstSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF5368332AF92B41003BBA04 /* Preview Content */,
+				FF56ED4F2AFA35530039666F /* Images */,
 				FF53682F2AF92B3E003BBA04 /* ContentView.swift */,
 				FF53682D2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift */,
 				FF56ED5A2AFA7DD30039666F /* SwiftUIZStack.swift */,
 				FF5368312AF92B41003BBA04 /* Assets.xcassets */,
-				FF5368332AF92B41003BBA04 /* Preview Content */,
 				FF56ED432AF938590039666F /* ListScreen.swift */,
 				FF56ED452AF93DDC0039666F /* ListCell.swift */,
 				FF56ED472AF93E8D0039666F /* DetailsScreen.swift */,
 				FF56ED492AF9477A0039666F /* GridScreen.swift */,
 				FF56ED4B2AF948850039666F /* GridScreenCell.swift */,
-				FF56ED4F2AFA35530039666F /* Images */,
 				FF56ED5C2AFA7FE90039666F /* SwiftUIWebView.swift */,
+				FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */,
 				FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */,
+				FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */,
 			);
 			path = FirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				FF5368302AF92B3E003BBA04 /* ContentView.swift in Sources */,
 				FF56ED4E2AF94CB90039666F /* CommonImageDisplay.swift in Sources */,
 				FF56ED4A2AF9477A0039666F /* GridScreen.swift in Sources */,
+				FF56ED652AFBA6EE0039666F /* GeometricReaderView.swift in Sources */,
 				FF56ED5D2AFA7FE90039666F /* SwiftUIWebView.swift in Sources */,
 				FF56ED462AF93DDC0039666F /* ListCell.swift in Sources */,
 				FF56ED5B2AFA7DD30039666F /* SwiftUIZStack.swift in Sources */,
@@ -302,6 +309,7 @@
 				FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */,
 				FF56ED482AF93E8D0039666F /* DetailsScreen.swift in Sources */,
 				FF56ED442AF938590039666F /* ListScreen.swift in Sources */,
+				FF56ED632AFB9CF40039666F /* TabBarUIViews.swift in Sources */,
 				FF53682E2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

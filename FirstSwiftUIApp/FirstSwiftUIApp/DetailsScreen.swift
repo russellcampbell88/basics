@@ -15,7 +15,6 @@ struct DetailsScreen: View {
     var body: some View {
         Text( data )
         
-        
     }
 }
 

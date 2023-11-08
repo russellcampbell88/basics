@@ -1,15 +1,13 @@
 //
-//  GeometricReaderExampleView.swift
+//  GeometricReaderView.swift
 //  FirstSwiftUIApp
 //
-//  Created by Russell Campbell on 11/7/23.
+//  Created by Russell Campbell on 11/8/23.
 //
 
 import SwiftUI
 
-//  Geonmetry views are useful in cases where
-//  you want to align views.
-struct GeometricReaderExampleView: View {
+struct GeometricReaderView: View {
     var body: some View {
         Text("Parent View")
             .frame(width: 200, height:  200)
@@ -27,5 +25,5 @@ struct GeometricReaderExampleView: View {
 }
 
 #Preview {
-    GeometricReaderExampleView()
+    GeometricReaderView()
 }

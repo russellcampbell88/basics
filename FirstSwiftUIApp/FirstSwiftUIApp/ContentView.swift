@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-
+//
 struct ContentView: View 
 {
     
@@ -75,13 +75,21 @@ struct ContentView: View
                     }.buttonStyle(.borderedProminent)
                 }
                 HStack {
-                    NavigationLink("ZStackView") {
+                    NavigationLink("ZStack View") {
                         SwiftUIZStack()
                     }.buttonStyle(.borderedProminent)
                     
-                    NavigationLink("WebView") {
+                    NavigationLink("Web View") {
                         SwiftUIWebView()
                     }.buttonStyle(.borderedProminent)
+                    
+                    NavigationLink("Tab Bar") {
+                        TabBarUIViews()
+                    }.buttonStyle( .borderedProminent )
+                    
+                    NavigationLink("Geometric Reader") {
+                        GeometricReaderView()
+                    }.buttonStyle( .borderedProminent )
                 }
                 
 

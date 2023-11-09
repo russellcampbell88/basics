@@ -9,5 +9,5 @@ import Foundation
 
 struct APIEndPoints
 {
-    static let pokemonEndPoint = "https://api.pokemontcg.io/v2/cards?page=1&pageSize=15"
+    static let pokemonEndPoint = "https://api.pokemontcg.io/v2/cards?page=1&pageSize=100" // get more data
 }

@@ -25,7 +25,7 @@
 		FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */; };
 		FF56ED632AFB9CF40039666F /* TabBarUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */; };
 		FF56ED652AFBA6EE0039666F /* GeometricReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */; };
-		FF56ED672AFBC73B0039666F /* NavigationSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED662AFBC73B0039666F /* NavigationSplitView.swift */; };
+		FF56ED672AFBC73B0039666F /* NavigationSplitViewPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED662AFBC73B0039666F /* NavigationSplitViewPokemon.swift */; };
 		FF56ED6B2AFBE1C80039666F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56ED6A2AFBE1C70039666F /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +68,7 @@
 		FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricReaderExampleView.swift; sourceTree = "<group>"; };
 		FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUIViews.swift; sourceTree = "<group>"; };
 		FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricReaderView.swift; sourceTree = "<group>"; };
-		FF56ED662AFBC73B0039666F /* NavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitView.swift; sourceTree = "<group>"; };
+		FF56ED662AFBC73B0039666F /* NavigationSplitViewPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewPokemon.swift; sourceTree = "<group>"; };
 		FF56ED6A2AFBE1C70039666F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 				FF56ED642AFBA6EE0039666F /* GeometricReaderView.swift */,
 				FF56ED5E2AFA8EC20039666F /* GeometricReaderExampleView.swift */,
 				FF56ED622AFB9CF40039666F /* TabBarUIViews.swift */,
-				FF56ED662AFBC73B0039666F /* NavigationSplitView.swift */,
+				FF56ED662AFBC73B0039666F /* NavigationSplitViewPokemon.swift */,
 			);
 			path = FirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 				FF56ED5F2AFA8EC20039666F /* GeometricReaderExampleView.swift in Sources */,
 				FF56ED482AF93E8D0039666F /* DetailsScreen.swift in Sources */,
 				FF56ED442AF938590039666F /* ListScreen.swift in Sources */,
-				FF56ED672AFBC73B0039666F /* NavigationSplitView.swift in Sources */,
+				FF56ED672AFBC73B0039666F /* NavigationSplitViewPokemon.swift in Sources */,
 				FF56ED632AFB9CF40039666F /* TabBarUIViews.swift in Sources */,
 				FF56ED6B2AFBE1C80039666F /* UserInfo.swift in Sources */,
 				FF53682E2AF92B3E003BBA04 /* FirstSwiftUIAppApp.swift in Sources */,

@@ -11,7 +11,7 @@ struct ListScreen: View
 {
     
     private let pokemonInPartyArray =
-    //["Feraligatr","Ampharos",Togekiss","Mamoswine","Tyranitar","Dragonite"]
+    //["Feraligatr","Ampharos","Mamoswine","Togekiss","Tyranitar","Dragonite"]
     
     ["Vicious","Agnus Dei","Angel","Joshua","Solomon","Victorious"]
     

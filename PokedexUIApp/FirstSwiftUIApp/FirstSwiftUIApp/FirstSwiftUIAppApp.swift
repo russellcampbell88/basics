@@ -11,7 +11,8 @@ import SwiftUI
 struct FirstSwiftUIAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()//*emailID: "abc@cba.com", password: "blah1234")
+            //ContentView()//*emailID: "abc@cba.com", password: "blah1234")
+            NavigationSplitViewPokemon()
         }
     }
 }

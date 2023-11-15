@@ -5,7 +5,7 @@
 //  Created by Russell Campbell on 11/13/23.
 //
 
-import SwiftUI
+import SwiftUI 
 
 struct HighSchoolListView: View {
     
